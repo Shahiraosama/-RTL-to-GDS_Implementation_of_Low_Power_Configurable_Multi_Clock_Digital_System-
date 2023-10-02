@@ -1,0 +1,288 @@
+Warning: Design 'SYS_TOP' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Mon Oct  2 20:57:00 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Multiply driven inputs (LINT-6)                                11
+    Unconnected ports (LINT-28)                                    16
+    Shorted outputs (LINT-31)                                       4
+    Constant outputs (LINT-52)                                      6
+
+Cells                                                              13
+    Cells do not drive (LINT-1)                                    10
+    Connected to power or ground (LINT-32)                          2
+    Leaf pins connected to undriven nets (LINT-58)                  1
+
+Tristate                                                           39
+    A tristate bus has a non tri-state driver (LINT-34)            39
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv_RATIO8', cell 'C138' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_FULL_ADDRESS4', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_EMPTY_ADDRESS4', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C95' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_CLK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_RST' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_INC' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'deserializer', port 'prescale[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'stp_chk_en' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to output port 'clk_div_en'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'start_bit' is connected to logic 0. 
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'stop_bit' is connected to logic 1. 
+Warning: In design 'SYS_TOP', three-state bus 'ALU_CLK' has non three-state driver 'clk_gating_unit/C17/Z'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[0]' has non three-state driver 'reg_file_unit/RegFile_reg[1][0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[1]' has non three-state driver 'reg_file_unit/RegFile_reg[1][1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[2]' has non three-state driver 'reg_file_unit/RegFile_reg[1][2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[3]' has non three-state driver 'reg_file_unit/RegFile_reg[1][3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[4]' has non three-state driver 'reg_file_unit/RegFile_reg[1][4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[5]' has non three-state driver 'reg_file_unit/RegFile_reg[1][5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[6]' has non three-state driver 'reg_file_unit/RegFile_reg[1][6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_B[7]' has non three-state driver 'reg_file_unit/RegFile_reg[1][7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[0]' has non three-state driver 'reg_file_unit/RegFile_reg[0][0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[1]' has non three-state driver 'reg_file_unit/RegFile_reg[0][1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[2]' has non three-state driver 'reg_file_unit/RegFile_reg[0][2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[3]' has non three-state driver 'reg_file_unit/RegFile_reg[0][3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[4]' has non three-state driver 'reg_file_unit/RegFile_reg[0][4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[5]' has non three-state driver 'reg_file_unit/RegFile_reg[0][5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[6]' has non three-state driver 'reg_file_unit/RegFile_reg[0][6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'OP_A[7]' has non three-state driver 'reg_file_unit/RegFile_reg[0][7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'fifo_data_vld' has non three-state driver 'sys_ctrl_unit/C680/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[0]' has non three-state driver 'sys_ctrl_unit/C679/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[1]' has non three-state driver 'sys_ctrl_unit/C679/Z_1'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[2]' has non three-state driver 'sys_ctrl_unit/C679/Z_2'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[3]' has non three-state driver 'sys_ctrl_unit/C679/Z_3'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[4]' has non three-state driver 'sys_ctrl_unit/C679/Z_4'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[5]' has non three-state driver 'sys_ctrl_unit/C679/Z_5'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[6]' has non three-state driver 'sys_ctrl_unit/C679/Z_6'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[7]' has non three-state driver 'sys_ctrl_unit/C679/Z_7'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'fifo_full' has non three-state driver 'asynch_fifo/full_unit/W_FULL_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'alu_func[0]' has non three-state driver 'sys_ctrl_unit/C677/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'alu_func[1]' has non three-state driver 'sys_ctrl_unit/C677/Z_1'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'alu_func[2]' has non three-state driver 'sys_ctrl_unit/C677/Z_2'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'alu_func[3]' has non three-state driver 'sys_ctrl_unit/C677/Z_3'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'alu_en' has non three-state driver 'sys_ctrl_unit/C678/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'sync_rst_1' has non three-state driver 'RST_SYNC_1/FF_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[0]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[1]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[2]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[0]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[1]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[2]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'stop_check', input pin 'synch_enable' of leaf cell 'stp_err_reg' is connected to undriven net 'stp_chk_en'.  (LINT-58)
+1
+Warning: Design 'SYS_TOP' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Mon Oct  2 21:01:28 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Multiply driven inputs (LINT-6)                                11
+    Unconnected ports (LINT-28)                                    16
+    Shorted outputs (LINT-31)                                       4
+    Constant outputs (LINT-52)                                      6
+
+Cells                                                              20
+    Cells do not drive (LINT-1)                                    17
+    Connected to power or ground (LINT-32)                          2
+    Leaf pins connected to undriven nets (LINT-58)                  1
+
+Tristate                                                           17
+    A tristate bus has a non tri-state driver (LINT-34)            17
+--------------------------------------------------------------------------------
+
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C326' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C327' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C328' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C329' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C354' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C356' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C358' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv_RATIO8', cell 'C138' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_FULL_ADDRESS4', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_EMPTY_ADDRESS4', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C95' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_CLK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_RST' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'W_INC' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[7]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[6]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'FIFO_WIDTH8_ADDRESS4_DEPTH8', input port 'WR_DATA[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'deserializer', port 'prescale[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'stp_chk_en' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to output port 'clk_div_en'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'start_bit' is connected to logic 0. 
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'stop_bit' is connected to logic 1. 
+Warning: In design 'SYS_TOP', three-state bus 'fifo_data_vld' has non three-state driver 'sys_ctrl_unit/C680/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[0]' has non three-state driver 'sys_ctrl_unit/C679/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[1]' has non three-state driver 'sys_ctrl_unit/C679/Z_1'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[2]' has non three-state driver 'sys_ctrl_unit/C679/Z_2'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[3]' has non three-state driver 'sys_ctrl_unit/C679/Z_3'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[4]' has non three-state driver 'sys_ctrl_unit/C679/Z_4'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[5]' has non three-state driver 'sys_ctrl_unit/C679/Z_5'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[6]' has non three-state driver 'sys_ctrl_unit/C679/Z_6'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'in_data_fifo[7]' has non three-state driver 'sys_ctrl_unit/C679/Z_7'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'fifo_full' has non three-state driver 'asynch_fifo/full_unit/W_FULL_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'sync_rst_1' has non three-state driver 'RST_SYNC_1/FF_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[0]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[1]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/r_addr[2]' has non three-state driver 'asynch_fifo/empty_unit/binary_ptr_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[0]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[1]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'asynch_fifo/w_addr[2]' has non three-state driver 'asynch_fifo/full_unit/binary_ptr_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'stop_check', input pin 'synch_enable' of leaf cell 'stp_err_reg' is connected to undriven net 'stp_chk_en'.  (LINT-58)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Mon Oct  2 21:07:20 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     26
+    Unconnected ports (LINT-28)                                    16
+    Shorted outputs (LINT-31)                                       4
+    Constant outputs (LINT-52)                                      6
+
+Cells                                                              20
+    Cells do not drive (LINT-1)                                    17
+    Connected to power or ground (LINT-32)                          2
+    Leaf pins connected to undriven nets (LINT-58)                  1
+--------------------------------------------------------------------------------
+
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C326' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C327' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C328' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C329' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C354' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C356' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_16_D_WIDTH8_FUN_WIDTH4', cell 'C358' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv_RATIO8', cell 'C138' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_FULL_ADDRESS4', cell 'B_1' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_EMPTY_ADDRESS4', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C95' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C107' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_12' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_13' does not drive any nets. (LINT-1)
+Warning: In design 'FSM_RX', cell 'B_14' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer', port 'prescale[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'deserializer', port 'edge_count[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_sampling', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'data_sample_en' is not connected to any nets. (LINT-28)
+Warning: In design 'FSM_RX', port 'stp_chk_en' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to output port 'clk_div_en'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'start_bit' is connected to logic 0. 
+Warning: In design 'UART_TX_D_WIDTH8', a pin on submodule 'mux_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'stop_bit' is connected to logic 1. 
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'CLK_EN' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_CTRL_D_WIDTH8_FUNC_ALU4_ADDRESS4', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CUSTOM_MUX_D_WIDTH8', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'stop_check', input pin 'synch_enable' of leaf cell 'stp_err_reg' is connected to undriven net 'stp_chk_en'.  (LINT-58)
+1
